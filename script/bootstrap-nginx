@@ -73,6 +73,7 @@ configure() {
 		--with-ld-opt="-Wl,-rpath,$VENV_DIR/lib" \
 		--with-pcre="../$PCRE_WD" \
 		--with-http_ssl_module \
+		--with-http_v2_module \
 		--add-module="../$NGINX_DEVKIT_WD" \
 		--add-module="../$NGINX_LUA_WD" \
 		$myconf

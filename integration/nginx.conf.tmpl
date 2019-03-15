@@ -12,7 +12,7 @@ http {
     lua_package_path '../lib/?.lua;;';
 
     server {
-        listen ${port} ssl;
+        listen ${port} http2 ssl;
         server_name localhost;
 
         ssl_certificate ../integration/support/nginx.crt;
